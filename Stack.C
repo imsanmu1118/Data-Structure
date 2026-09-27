@@ -42,7 +42,7 @@ int push(Stack* s ,ElementType e)
     if (s->top == MAX_SIZE - 1) {
         printf("栈已满，无法进栈\n");
         return 0; // 栈已满
-    }  
+    }
     s->top++;
     s->data[s->top] = e;
     return 1; // 进栈成功
